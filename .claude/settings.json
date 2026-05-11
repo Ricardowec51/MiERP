@@ -1,0 +1,37 @@
+{
+  "description": "MiERP - Sistema ERP personalizado basado en Odoo 19.0",
+  "metadata": {
+    "project": "MiERP",
+    "type": "ERP",
+    "framework": "Odoo",
+    "version": "19.0",
+    "language": "Python",
+    "license": "MIT"
+  },
+  "development": {
+    "python_version": "3.12",
+    "venv_path": "venv",
+    "custom_modules_path": "custom_addons",
+    "database": "mierp_dev",
+    "local_url": "http://localhost:8069"
+  },
+  "quick_commands": {
+    "activate_venv": "source venv/bin/activate",
+    "start_odoo": "source venv/bin/activate && python -m odoo -d mierp_dev",
+    "create_module": "source venv/bin/activate && python -m odoo.cli.scaffold MODULE_NAME custom_addons"
+  },
+  "important_paths": {
+    "custom_addons": "custom_addons/",
+    "odoo_core": "odoo/",
+    "standard_modules": "addons/",
+    "config": "odoo.conf",
+    "requirements": "requirements.txt"
+  },
+  "notes": [
+    "IMPORTANTE: Usar Python 3.12 (NO 3.14)",
+    "Los módulos personalizados van SIEMPRE en custom_addons/",
+    "NO modificar odoo/ ni addons/",
+    "PostgreSQL debe estar corriendo localmente",
+    "Versionado en GitHub: Ricardowec51/MiERP"
+  ]
+}

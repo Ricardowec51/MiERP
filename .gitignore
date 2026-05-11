@@ -8,6 +8,7 @@ _build/
 !.github
 !.mailmap
 !.weblate.json
+!.claude
 # compiled python files
 *.py[co]
 __pycache__/
