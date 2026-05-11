@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <!-- Sale Order Form View Extension -->
+        <record id="view_order_form_mierp" model="ir.ui.view">
+            <field name="name">sale.order.form.mierp</field>
+            <field name="model">sale.order</field>
+            <field name="inherit_id" ref="sale.view_order_form"/>
+            <field name="arch" type="xml">
+                <xpath expr="//notebook" position="inside">
+                    <page string="MiERP" name="mierp_page">
+                        <group>
+                            <field name="mierp_sales_channel"/>
+                            <field name="mierp_custom_field"/>
+                        </group>
+                    </page>
+                </xpath>
+            </field>
+        </record>
+
+        <!-- CRM Lead Form View Extension -->
+        <record id="view_crm_lead_form_mierp" model="ir.ui.view">
+            <field name="name">crm.lead.form.mierp</field>
+            <field name="model">crm.lead</field>
+            <field name="inherit_id" ref="crm.crm_lead_view_form"/>
+            <field name="arch" type="xml">
+                <xpath expr="//notebook" position="inside">
+                    <page string="MiERP" name="mierp_page">
+                        <group>
+                            <field name="mierp_lead_source"/>
+                            <field name="mierp_priority_level"/>
+                        </group>
+                    </page>
+                </xpath>
+            </field>
+        </record>
+    </data>
+</odoo>

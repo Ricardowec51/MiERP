@@ -1,0 +1,32 @@
+# English translation for MiERP Inventory.
+msgid ""
+msgstr ""
+"Project-Id-Version: MiERP Inventory 1.0\n"
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: model:ir.ui.menu,name:mierp_inventory.mierp_inventory_menu
+msgid "Inventory"
+msgstr "Inventory"
+
+#: field:product.template,mierp_sku_custom:0
+msgid "Custom SKU"
+msgstr "Custom SKU"
+
+#: field:product.template,mierp_storage_location:0
+msgid "Storage Location"
+msgstr "Storage Location"
+
+#: field:product.template,mierp_reorder_level:0
+msgid "Reorder Level"
+msgstr "Reorder Level"
+
+#: field:stock.picking,mierp_movement_type:0
+msgid "Movement Type"
+msgstr "Movement Type"
+
+#: field:stock.picking,mierp_notes:0
+msgid "Movement Notes"
+msgstr "Movement Notes"

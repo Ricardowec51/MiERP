@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <!-- Accounting Menu -->
+        <menuitem
+            id="mierp_accounting_menu"
+            parent="mierp_base.mierp_base_menu_root"
+            name="Accounting"
+            sequence="40"/>
+
+        <menuitem
+            id="mierp_accounting_invoices_menu"
+            parent="mierp_accounting_menu"
+            name="Invoices"
+            action="account.action_move_out_invoice_type"
+            sequence="10"/>
+
+        <menuitem
+            id="mierp_accounting_payments_menu"
+            parent="mierp_accounting_menu"
+            name="Payments"
+            action="account.action_account_payments_payable"
+            sequence="20"/>
+    </data>
+</odoo>

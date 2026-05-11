@@ -1,0 +1,41 @@
+# English translation for MiERP Sales.
+msgid ""
+msgstr ""
+"Project-Id-Version: MiERP Sales 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-05-11 00:00+0000\n"
+"PO-Revision-Date: 2026-05-11 00:00+0000\n"
+"Last-Translator: MiERP Team <dev@mierp.local>\n"
+"Language: en\n"
+"Language-Code: en_US\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: model:ir.ui.menu,name:mierp_sale.mierp_sale_menu
+msgid "Sales"
+msgstr "Sales"
+
+#: model:ir.ui.menu,name:mierp_sale.mierp_sale_orders_menu
+msgid "Sales Orders"
+msgstr "Sales Orders"
+
+#: model:ir.ui.menu,name:mierp_sale.mierp_sale_leads_menu
+msgid "Leads &amp; Opportunities"
+msgstr "Leads &amp; Opportunities"
+
+#: field:sale.order,mierp_sales_channel:0
+msgid "Sales Channel"
+msgstr "Sales Channel"
+
+#: field:sale.order,mierp_custom_field:0
+msgid "Custom Field"
+msgstr "Custom Field"
+
+#: field:crm.lead,mierp_lead_source:0
+msgid "Lead Source"
+msgstr "Lead Source"
+
+#: field:crm.lead,mierp_priority_level:0
+msgid "Priority Level"
+msgstr "Priority Level"

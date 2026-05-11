@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <!-- MiERP Root Menu -->
+        <menuitem id="mierp_base_menu_root" name="MiERP" sequence="0"/>
+
+        <!-- Settings Submenu -->
+        <menuitem
+            id="mierp_settings_menu"
+            parent="mierp_base_menu_root"
+            name="Settings"
+            sequence="100"/>
+    </data>
+</odoo>

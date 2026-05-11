@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <!-- Purchase Order Form View Extension -->
+        <record id="view_purchase_order_form_mierp" model="ir.ui.view">
+            <field name="name">purchase.order.form.mierp</field>
+            <field name="model">purchase.order</field>
+            <field name="inherit_id" ref="purchase.purchase_order_form"/>
+            <field name="arch" type="xml">
+                <xpath expr="//notebook" position="inside">
+                    <page string="MiERP" name="mierp_page">
+                        <group>
+                            <field name="mierp_purchase_type"/>
+                            <field name="mierp_supplier_rating"/>
+                        </group>
+                    </page>
+                </xpath>
+            </field>
+        </record>
+    </data>
+</odoo>

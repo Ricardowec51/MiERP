@@ -1,0 +1,3 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_product_template_user,Access product.template as user,product.model_product_template,base.group_user,1,0,0,0
+access_stock_picking_user,Access stock.picking as user,stock.model_stock_picking,base.group_user,1,1,1,0

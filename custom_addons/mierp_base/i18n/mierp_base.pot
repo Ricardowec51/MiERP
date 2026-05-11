@@ -1,0 +1,32 @@
+# Translation template for MiERP Base.
+msgid ""
+msgstr ""
+"Project-Id-Version: MiERP Base 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-05-11 00:00+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: model:ir.ui.menu,name:mierp_base.mierp_base_menu_root
+msgid "MiERP"
+msgstr ""
+
+#: model:ir.ui.menu,name:mierp_base.mierp_settings_menu
+msgid "Settings"
+msgstr ""
+
+#: field:res.company,mierp_brand_name:0
+msgid "MiERP Brand Name"
+msgstr ""
+
+#: field:res.company,mierp_module_enabled:0
+msgid "MiERP Enabled"
+msgstr ""
+
+#: field:res.company,mierp_version:0
+msgid "MiERP Version"
+msgstr ""

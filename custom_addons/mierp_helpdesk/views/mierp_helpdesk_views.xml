@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <!-- Helpdesk Ticket List View -->
+        <record id="view_helpdesk_ticket_list" model="ir.ui.view">
+            <field name="name">mierp.helpdesk.ticket.list</field>
+            <field name="model">mierp.helpdesk.ticket</field>
+            <field name="arch" type="xml">
+                <tree>
+                    <field name="name"/>
+                    <field name="subject"/>
+                    <field name="customer_id"/>
+                    <field name="status"/>
+                    <field name="priority"/>
+                    <field name="created_date"/>
+                </tree>
+            </field>
+        </record>
+
+        <!-- Helpdesk Ticket Form View -->
+        <record id="view_helpdesk_ticket_form" model="ir.ui.view">
+            <field name="name">mierp.helpdesk.ticket.form</field>
+            <field name="model">mierp.helpdesk.ticket</field>
+            <field name="arch" type="xml">
+                <form>
+                    <header>
+                        <field name="status" widget="statusbar"/>
+                    </header>
+                    <sheet>
+                        <group>
+                            <field name="name"/>
+                            <field name="subject"/>
+                            <field name="customer_id"/>
+                            <field name="assigned_to"/>
+                            <field name="priority"/>
+                            <field name="created_date"/>
+                            <field name="updated_date"/>
+                        </group>
+                        <group string="Description">
+                            <field name="description" nolabel="1"/>
+                        </group>
+                    </sheet>
+                    <div class="oe_chatter">
+                        <field name="message_follower_ids" widget="mail_followers"/>
+                        <field name="activity_ids" widget="mail_activity"/>
+                        <field name="message_ids" widget="mail_thread"/>
+                    </div>
+                </form>
+            </field>
+        </record>
+
+        <!-- Helpdesk Ticket Action -->
+        <record id="action_helpdesk_tickets" model="ir.actions.act_window">
+            <field name="name">Helpdesk Tickets</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">mierp.helpdesk.ticket</field>
+            <field name="view_mode">tree,form</field>
+            <field name="search_view_id" ref="view_helpdesk_ticket_search"/>
+            <field name="help" type="html">
+                <p class="o_view_nocontent_smiling_face">
+                    Create a new ticket
+                </p>
+            </field>
+        </record>
+
+        <!-- Search View -->
+        <record id="view_helpdesk_ticket_search" model="ir.ui.view">
+            <field name="name">mierp.helpdesk.ticket.search</field>
+            <field name="model">mierp.helpdesk.ticket</field>
+            <field name="arch" type="xml">
+                <search>
+                    <field name="name"/>
+                    <field name="subject"/>
+                    <field name="customer_id"/>
+                    <filter name="filter_new" string="New" domain="[('status', '=', 'new')]"/>
+                    <filter name="filter_open" string="Open" domain="[('status', '=', 'open')]"/>
+                    <filter name="filter_closed" string="Closed" domain="[('status', '=', 'closed')]"/>
+                </search>
+            </field>
+        </record>
+    </data>
+</odoo>
+

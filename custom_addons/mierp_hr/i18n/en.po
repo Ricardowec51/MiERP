@@ -1,0 +1,32 @@
+# English translation for MiERP HR.
+msgid ""
+msgstr ""
+"Project-Id-Version: MiERP HR 1.0\n"
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: model:ir.ui.menu,name:mierp_hr.mierp_hr_menu
+msgid "HR"
+msgstr "HR"
+
+#: field:hr.employee,mierp_employee_code:0
+msgid "Employee Code"
+msgstr "Employee Code"
+
+#: field:hr.employee,mierp_department_code:0
+msgid "Department Code"
+msgstr "Department Code"
+
+#: field:hr.employee,mierp_employment_type:0
+msgid "Employment Type"
+msgstr "Employment Type"
+
+#: field:hr.payslip,mierp_custom_notes:0
+msgid "Custom Notes"
+msgstr "Custom Notes"
+
+#: field:hr.payslip,mierp_payment_method:0
+msgid "Payment Method"
+msgstr "Payment Method"

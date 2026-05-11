@@ -1,0 +1,28 @@
+# English translation for MiERP Purchases.
+msgid ""
+msgstr ""
+"Project-Id-Version: MiERP Purchases 1.0\n"
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: model:ir.ui.menu,name:mierp_purchase.mierp_purchase_menu
+msgid "Purchases"
+msgstr "Purchases"
+
+#: field:purchase.order,mierp_purchase_type:0
+msgid "Purchase Type"
+msgstr "Purchase Type"
+
+#: field:purchase.order,mierp_supplier_rating:0
+msgid "Supplier Rating"
+msgstr "Supplier Rating"
+
+#: field:res.partner,mierp_is_supplier:0
+msgid "Is Supplier"
+msgstr "Is Supplier"
+
+#: field:res.partner,mierp_supplier_code:0
+msgid "Supplier Code"
+msgstr "Supplier Code"

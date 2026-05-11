@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <!-- HR Employee Form View Extension -->
+        <record id="view_employee_form_mierp" model="ir.ui.view">
+            <field name="name">hr.employee.form.mierp</field>
+            <field name="model">hr.employee</field>
+            <field name="inherit_id" ref="hr.view_employee_form"/>
+            <field name="arch" type="xml">
+                <xpath expr="//notebook" position="inside">
+                    <page string="MiERP" name="mierp_page">
+                        <group>
+                            <field name="mierp_employee_code"/>
+                            <field name="mierp_department_code"/>
+                            <field name="mierp_employment_type"/>
+                        </group>
+                    </page>
+                </xpath>
+            </field>
+        </record>
+
+        <!-- HR Payslip Form View Extension -->
+        <record id="view_payslip_form_mierp" model="ir.ui.view">
+            <field name="name">hr.payslip.form.mierp</field>
+            <field name="model">hr.payslip</field>
+            <field name="inherit_id" ref="hr_payroll.view_hr_payslip_form"/>
+            <field name="arch" type="xml">
+                <xpath expr="//notebook" position="inside">
+                    <page string="MiERP" name="mierp_page">
+                        <group>
+                            <field name="mierp_custom_notes"/>
+                            <field name="mierp_payment_method"/>
+                        </group>
+                    </page>
+                </xpath>
+            </field>
+        </record>
+    </data>
+</odoo>

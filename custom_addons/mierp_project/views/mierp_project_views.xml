@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <!-- Project Form View Extension -->
+        <record id="view_project_form_mierp" model="ir.ui.view">
+            <field name="name">project.project.form.mierp</field>
+            <field name="model">project.project</field>
+            <field name="inherit_id" ref="project.edit_project"/>
+            <field name="arch" type="xml">
+                <xpath expr="//notebook" position="inside">
+                    <page string="MiERP" name="mierp_page">
+                        <group>
+                            <field name="mierp_project_code"/>
+                            <field name="mierp_priority"/>
+                        </group>
+                    </page>
+                </xpath>
+            </field>
+        </record>
+
+        <!-- Task Form View Extension -->
+        <record id="view_task_form_mierp" model="ir.ui.view">
+            <field name="name">project.task.form.mierp</field>
+            <field name="model">project.task</field>
+            <field name="inherit_id" ref="project.view_task_form2"/>
+            <field name="arch" type="xml">
+                <xpath expr="//notebook" position="inside">
+                    <page string="MiERP" name="mierp_page">
+                        <group>
+                            <field name="mierp_task_type"/>
+                            <field name="mierp_estimated_hours"/>
+                        </group>
+                    </page>
+                </xpath>
+            </field>
+        </record>
+    </data>
+</odoo>

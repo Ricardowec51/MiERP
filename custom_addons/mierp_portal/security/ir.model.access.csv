@@ -1,0 +1,2 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_portal_config_admin,Access mierp.portal.config as admin,mierp_portal.model_mierp_portal_config,base.group_system,1,1,1,1

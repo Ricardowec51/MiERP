@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <!-- Projects Menu -->
+        <menuitem
+            id="mierp_project_menu"
+            parent="mierp_base.mierp_base_menu_root"
+            name="Projects"
+            sequence="60"/>
+
+        <menuitem
+            id="mierp_project_projects_menu"
+            parent="mierp_project_menu"
+            name="Projects"
+            action="project.action_project_list"
+            sequence="10"/>
+
+        <menuitem
+            id="mierp_project_tasks_menu"
+            parent="mierp_project_menu"
+            name="Tasks"
+            action="project.action_view_task"
+            sequence="20"/>
+    </data>
+</odoo>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <!-- Sales Menu -->
+        <menuitem
+            id="mierp_sale_menu"
+            parent="mierp_base.mierp_base_menu_root"
+            name="Sales"
+            sequence="10"/>
+
+        <menuitem
+            id="mierp_sale_orders_menu"
+            parent="mierp_sale_menu"
+            name="Sales Orders"
+            action="sale.action_orders"
+            sequence="10"/>
+
+        <menuitem
+            id="mierp_sale_leads_menu"
+            parent="mierp_sale_menu"
+            name="Leads &amp; Opportunities"
+            action="crm.crm_lead_action_leads"
+            sequence="20"/>
+    </data>
+</odoo>

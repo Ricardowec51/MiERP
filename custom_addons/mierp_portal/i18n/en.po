@@ -1,0 +1,28 @@
+# English translation for MiERP Portal.
+msgid ""
+msgstr ""
+"Project-Id-Version: MiERP Portal 1.0\n"
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: model:ir.ui.menu,name:mierp_portal.mierp_portal_menu
+msgid "Portal"
+msgstr "Portal"
+
+#: model:ir.ui.menu,name:mierp_portal.mierp_portal_config_menu
+msgid "Portal Configuration"
+msgstr "Portal Configuration"
+
+#: model:ir.model,name:mierp_portal.model_mierp_portal_config
+msgid "Portal Configuration"
+msgstr "Portal Configuration"
+
+#: field:mierp.portal.config,name:0
+msgid "Portal Name"
+msgstr "Portal Name"
+
+#: field:mierp.portal.config,custom_theme:0
+msgid "Theme"
+msgstr "Theme"

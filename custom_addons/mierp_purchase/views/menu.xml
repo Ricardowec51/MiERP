@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <!-- Purchases Menu -->
+        <menuitem
+            id="mierp_purchase_menu"
+            parent="mierp_base.mierp_base_menu_root"
+            name="Purchases"
+            sequence="20"/>
+
+        <menuitem
+            id="mierp_purchase_orders_menu"
+            parent="mierp_purchase_menu"
+            name="Purchase Orders"
+            action="purchase.purchase_order_action"
+            sequence="10"/>
+    </data>
+</odoo>

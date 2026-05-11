@@ -1,0 +1,28 @@
+# Spanish translation for MiERP Projects.
+msgid ""
+msgstr ""
+"Project-Id-Version: MiERP Projects 1.0\n"
+"Language: es\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: model:ir.ui.menu,name:mierp_project.mierp_project_menu
+msgid "Projects"
+msgstr "Proyectos"
+
+#: field:project.project,mierp_project_code:0
+msgid "Project Code"
+msgstr "Código de Proyecto"
+
+#: field:project.project,mierp_priority:0
+msgid "Priority"
+msgstr "Prioridad"
+
+#: field:project.task,mierp_task_type:0
+msgid "Task Type"
+msgstr "Tipo de Tarea"
+
+#: field:project.task,mierp_estimated_hours:0
+msgid "Estimated Hours"
+msgstr "Horas Estimadas"

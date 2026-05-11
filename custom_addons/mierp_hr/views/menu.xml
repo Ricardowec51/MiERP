@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <!-- HR Menu -->
+        <menuitem
+            id="mierp_hr_menu"
+            parent="mierp_base.mierp_base_menu_root"
+            name="HR"
+            sequence="50"/>
+
+        <menuitem
+            id="mierp_hr_employees_menu"
+            parent="mierp_hr_menu"
+            name="Employees"
+            action="hr.open_view_employee_list"
+            sequence="10"/>
+
+        <menuitem
+            id="mierp_hr_payroll_menu"
+            parent="mierp_hr_menu"
+            name="Payroll"
+            action="hr_payroll.action_payslip_list"
+            sequence="20"/>
+    </data>
+</odoo>

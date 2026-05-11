@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <!-- Inventory Menu -->
+        <menuitem
+            id="mierp_inventory_menu"
+            parent="mierp_base.mierp_base_menu_root"
+            name="Inventory"
+            sequence="30"/>
+
+        <menuitem
+            id="mierp_inventory_products_menu"
+            parent="mierp_inventory_menu"
+            name="Products"
+            action="product.product_template_action"
+            sequence="10"/>
+
+        <menuitem
+            id="mierp_inventory_movements_menu"
+            parent="mierp_inventory_menu"
+            name="Stock Movements"
+            action="stock.action_picking_type_all"
+            sequence="20"/>
+    </data>
+</odoo>
